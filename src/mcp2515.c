@@ -117,11 +117,11 @@ uint8_t mcp2515_read_status(uint8_t type)
 }
 
 // -------------------------------------------------------------------------
-uint8_t mcp2515_init(uint8_t speed, uint8_t clock)
+uint8_t mcp2515_init(uint8_t speed, uint8_t clockSpeed)
 {
 
 	uint8_t cfg1, cfg2, cfg3;
-		switch(clock) {
+		switch(clockSpeed) {
 
 			case (MCP_8MHZ):
 			switch (speed)
@@ -217,7 +217,7 @@ uint8_t mcp2515_init(uint8_t speed, uint8_t clock)
             break;
         }
 			break;
-			
+
 			case(MCP_16MHZ):
     		switch (speed) {
 

@@ -24,7 +24,7 @@ class CanbusClass
   public:
 
 	CanbusClass();
-    char init(unsigned char);
+    char init(unsigned char, unsigned char);
 	char message_tx(void);
 	char message_rx(unsigned char *buffer);
 	char ecu_req(unsigned char pid,  char *buffer);
